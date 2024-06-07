@@ -1,4 +1,4 @@
-//Add a comment here to explain the overall purpose of this code
+//This code snippet sets up a simple web server that fetches data from a PostgreSQL database and sends it as a JSON response to client requests.
 require('dotenv').config();
 const express = require('express');
 const { Pool } = require('pg');
