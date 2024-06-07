@@ -1,4 +1,5 @@
---Add a comment here that explains the purpose of the table and sample data being inserted
+-- This table stores air quality observations. Each row represents a single observation, 
+-- including the site ID, observation time (in UTC), and the air quality reading.
 CREATE TABLE observations (
     ID SERIAL PRIMARY KEY,
     SiteID INT,
@@ -6,7 +7,7 @@ CREATE TABLE observations (
     Value FLOAT
 );
 
--- Insert some sample data
+-- The sample data represents four observations taken at two different sites on May 1, 2024.v
 INSERT INTO observations (SiteID, ObservationTimeUTC, Value) VALUES
 (1, '2024-05-01 12:00:00', 25.4),
 (2, '2024-05-01 12:05:00', 26.1),
